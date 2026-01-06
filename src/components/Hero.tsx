@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ArrowRight, Shield, Clock, Award } from "lucide-react";
+import { MessageCircle, Shield, Clock, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -47,9 +47,9 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="#products">
+              <a href="#product-carousel">
+                <MessageCircle className="w-5 h-5" />
                 Ver Produtos
-                <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
           </div>
