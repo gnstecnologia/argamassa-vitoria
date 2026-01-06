@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import productsShowcase from "@/assets/products-showcase.png";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const productCategories = [
   {
@@ -89,7 +90,7 @@ const Products = () => {
                         </div>
                         <span className="text-muted-foreground text-xs">{item.desc}</span>
                       </div>
-                      <MessageCircle className="w-4 h-4 text-[hsl(142,70%,49%)] flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <WhatsAppIcon className="w-4 h-4 text-[hsl(142,70%,49%)] flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                   ))}
                 </div>
@@ -99,7 +100,7 @@ const Products = () => {
             {/* CTA Button */}
             <Button variant="whatsapp" size="lg" className="w-full" asChild>
               <a href="https://wa.me/5577999120875?text=Olá! Gostaria de conhecer todos os produtos." target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 Fale com um Especialista
               </a>
             </Button>

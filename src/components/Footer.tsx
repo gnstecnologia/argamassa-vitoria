@@ -1,4 +1,5 @@
-import { Phone, Mail, MessageCircle } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -54,7 +55,7 @@ const Footer = () => {
                 (77) 3420-8084
               </a>
               <a href="https://wa.me/5577999120875" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/60 hover:text-secondary transition-colors text-sm">
-                <MessageCircle className="w-4 h-4" />
+                <WhatsAppIcon className="w-4 h-4" />
                 (77) 9.9912-0875
               </a>
               <a href="mailto:argamassavitoria@hotmail.com" className="flex items-center gap-2 text-primary-foreground/60 hover:text-secondary transition-colors text-sm">

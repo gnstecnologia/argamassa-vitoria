@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MessageCircle, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const Contact = () => {
   return (
@@ -43,7 +44,7 @@ const Contact = () => {
                 className="flex items-center gap-4 text-primary-foreground hover:text-secondary transition-colors group"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary-foreground/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="font-medium">WhatsApp</p>
@@ -80,7 +81,7 @@ const Contact = () => {
           <div className="bg-card rounded-2xl p-8 md:p-12 shadow-lg">
             <div className="text-center">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[hsl(142,70%,49%)]/20 mb-6">
-                <MessageCircle className="w-8 h-8 text-[hsl(142,70%,49%)]" />
+                <WhatsAppIcon className="w-8 h-8 text-[hsl(142,70%,49%)]" />
               </div>
               <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                 Solicite um Orçamento
@@ -96,7 +97,7 @@ const Contact = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-6 h-6" />
+                  <WhatsAppIcon className="w-6 h-6" />
                   Falar no WhatsApp
                 </a>
               </Button>
