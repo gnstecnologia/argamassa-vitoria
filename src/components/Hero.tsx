@@ -2,17 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Shield, Clock, Award, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20">
+  return <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroBg}
-          alt="Fábrica de argamassa"
-          className="w-full h-full object-cover"
-        />
+        <img src={heroBg} alt="Fábrica de argamassa" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
       </div>
 
@@ -28,19 +22,25 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 style={{
+          animationDelay: "0.1s"
+        }} className="font-display text-4xl md:text-5xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up lg:text-5xl">
             Argamassa de Qualidade para
             <span className="block text-secondary mt-2">Construir Seus Sonhos</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-up" style={{
+          animationDelay: "0.2s"
+        }}>
             Fabricamos argamassas e rejuntes com qualidade, confiança e durabilidade. 
             Produto confiável para assentamento de pisos, revestimentos e porcelanatos.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{
+          animationDelay: "0.3s"
+        }}>
             <Button variant="hero" size="lg" asChild>
               <a href="https://wa.me/5577999120875" target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-5 h-5" />
@@ -56,7 +56,9 @@ const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-fade-up" style={{
+          animationDelay: "0.4s"
+        }}>
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-lg bg-primary-foreground/10 flex items-center justify-center">
                 <Shield className="w-6 h-6 text-secondary" />
@@ -94,8 +96,6 @@ const Hero = () => {
           <div className="w-1 h-2 bg-primary-foreground/50 rounded-full animate-pulse" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
