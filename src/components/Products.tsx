@@ -51,13 +51,12 @@ const Products = () => {
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Showcase Image */}
-          <div className="order-2 lg:order-1">
-            <img
-              src={productsShowcase}
-              alt="Linha de produtos Argamassa Vitória"
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
-          </div>
+          <div 
+            className="order-2 lg:order-1 rounded-2xl shadow-2xl bg-cover bg-center bg-no-repeat aspect-[4/3] w-full"
+            style={{ backgroundImage: `url(${productsShowcase})` }}
+            role="img"
+            aria-label="Linha de produtos Argamassa Vitória"
+          />
 
           {/* Product Categories */}
           <div className="order-1 lg:order-2 space-y-8">
