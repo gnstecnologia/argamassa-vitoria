@@ -128,16 +128,16 @@ const ProductCarousel = () => {
   const duplicatedProducts = [...products, ...products];
 
   return (
-    <section id="product-carousel" className="py-24 bg-muted overflow-hidden">
+    <section id="product-carousel" className="relative py-24 overflow-hidden bg-gradient-to-b from-primary via-primary/95 to-muted">
       <div className="container mx-auto px-4 mb-12">
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
             Nossos Produtos
           </span>
-          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
             Linha Completa de Produtos
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-primary-foreground/80 text-lg">
             Conheça nossa linha completa de argamassas, rejuntes e mais. Clique para solicitar orçamento via WhatsApp.
           </p>
         </div>

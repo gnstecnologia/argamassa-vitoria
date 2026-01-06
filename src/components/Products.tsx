@@ -27,10 +27,10 @@ const productCategories = [
 
 const Products = () => {
   return (
-    <section id="products" className="relative py-24 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-      <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-primary/10 to-transparent" />
+    <section id="products" className="relative py-24 overflow-hidden bg-gradient-to-b from-background via-muted/30 to-primary/10">
+      {/* Background decorative */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-primary/20 to-transparent" />
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
