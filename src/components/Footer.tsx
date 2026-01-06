@@ -15,7 +15,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="Argamassa Vitória" 
-                className="w-10 h-10 rounded-full object-cover"
+                className="w-14 h-14 rounded-full object-cover"
               />
               <div>
                 <span className="font-display font-bold text-lg text-primary-foreground">Argamassa </span>
