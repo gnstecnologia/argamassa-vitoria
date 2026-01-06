@@ -3,8 +3,10 @@ import { Phone, Mail, MessageCircle, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-primary">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="relative py-24 bg-primary overflow-hidden">
+      {/* Decorative gradient from above */}
+      <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-primary to-transparent opacity-50" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>

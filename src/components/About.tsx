@@ -12,8 +12,10 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="about" className="relative py-24 bg-gradient-to-b from-primary/10 via-background to-primary overflow-hidden">
+      {/* Decorative */}
+      <div className="absolute top-1/4 right-0 w-1/3 h-1/2 bg-gradient-to-l from-secondary/5 to-transparent" />
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
