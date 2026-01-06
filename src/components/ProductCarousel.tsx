@@ -12,6 +12,7 @@ import pisoSobrePiso from "@/assets/products/piso-sobre-piso.jpg";
 import calRefinado from "@/assets/products/cal-refinado.jpg";
 import rejuntamento from "@/assets/products/rejuntamento.jpg";
 import tintaEmPo from "@/assets/products/tinta-em-po.jpg";
+import coranteHidracor from "@/assets/products/corante-hidracor.jpg";
 
 const products = [
   {
@@ -73,6 +74,12 @@ const products = [
     name: "Tinta em Pó",
     description: "Tinta em pó para exteriores e interiores. Lavável e de alta durabilidade.",
     whatsappMessage: "Olá! Gostaria de saber mais sobre a Tinta em Pó.",
+  },
+  {
+    image: coranteHidracor,
+    name: "Corante Hidracor",
+    description: "Corante líquido em diversas cores: amarelo, ocre, verde, azul, vermelho, violeta, preto e laranja.",
+    whatsappMessage: "Olá! Gostaria de saber mais sobre o Corante Hidracor.",
   },
 ];
 
