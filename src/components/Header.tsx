@@ -23,7 +23,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="Argamassa Vitória" 
-              className="w-12 h-12 rounded-full object-cover"
+              className="w-16 h-16 rounded-full object-cover"
             />
             <div className="hidden sm:block">
               <span className="font-display font-bold text-xl text-foreground">Argamassa</span>
