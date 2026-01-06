@@ -73,26 +73,6 @@ const Benefits = () => {
             </div>
           ))}
         </div>
-
-        {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">20+</p>
-            <p className="text-muted-foreground">Anos de Mercado</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">100+</p>
-            <p className="text-muted-foreground">Clientes Ativos</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">8</p>
-            <p className="text-muted-foreground">Tipos de Argamassa</p>
-          </div>
-          <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl font-bold text-primary mb-2">12+</p>
-            <p className="text-muted-foreground">Cores de Rejunte</p>
-          </div>
-        </div>
       </div>
     </section>
   );
