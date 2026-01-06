@@ -12,7 +12,7 @@ const highlights = [
 
 const About = () => {
   return (
-    <section id="about" className="relative py-24 bg-gradient-to-b from-primary/10 via-background to-primary overflow-hidden">
+    <section id="about" className="relative py-24 bg-gradient-to-b from-background via-primary/5 to-primary/30 overflow-hidden">
       {/* Decorative */}
       <div className="absolute top-1/4 right-0 w-1/3 h-1/2 bg-gradient-to-l from-secondary/5 to-transparent" />
       <div className="container mx-auto px-4 relative z-10">
