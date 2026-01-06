@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 import argamassaAci from "@/assets/products/argamassa-aci.jpg";
@@ -189,14 +190,14 @@ const ProductCarousel = () => {
       {/* Bottom CTA */}
       <div className="container mx-auto px-4 mt-12">
         <div className="text-center">
-          <Button variant="whatsapp" size="lg" asChild>
+          <Button variant="catalog" size="lg" asChild>
             <a
               href="https://wa.me/5577999120875?text=Ol%C3%A1!%20Gostaria%20de%20ver%20o%20cat%C3%A1logo%20completo%20de%20produtos."
               target="_blank"
               rel="noopener noreferrer"
             >
-              <WhatsAppIcon className="w-5 h-5" />
-              Ver Catálogo Completo no WhatsApp
+              <FileText className="w-5 h-5" />
+              Ver Catálogo Completo
             </a>
           </Button>
         </div>
