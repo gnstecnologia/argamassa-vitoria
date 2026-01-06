@@ -128,7 +128,7 @@ const ProductCarousel = () => {
   const duplicatedProducts = [...products, ...products];
 
   return (
-    <section id="product-carousel" className="relative py-24 overflow-hidden bg-gradient-to-b from-primary via-background to-muted">
+    <section id="product-carousel" className="relative py-24 overflow-hidden bg-gradient-to-b from-background via-muted/30 to-muted/50">
       <div className="container mx-auto px-4 mb-12">
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
