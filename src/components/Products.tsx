@@ -1,143 +1,109 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
-import productMortar from "@/assets/product-mortar.jpg";
-import productGrout from "@/assets/product-grout.jpg";
+import { MessageCircle, Check } from "lucide-react";
+import productsShowcase from "@/assets/products-showcase.png";
 
-const products = [
+const productCategories = [
   {
-    category: "Argamassas",
-    image: productMortar,
+    title: "Argamassas",
     items: [
-      {
-        name: "Argamassa ACI",
-        description: "Para assentamento de cerâmica em área interna. Ideal para pisos comuns.",
-      },
-      {
-        name: "Argamassa ACII",
-        description: "Para área externa, revestimento de cozinha e banheiro. Alta aderência.",
-      },
-      {
-        name: "Argamassa ACIII Cinza",
-        description: "Para fachadas, áreas de grande fluxo e porcelanatos grandes (80x80+).",
-        featured: true,
-      },
-      {
-        name: "Argamassa ACIII Branca",
-        description: "Para pastilhas de vidro, mármores e pedras naturais. Acabamento premium.",
-        featured: true,
-      },
-      {
-        name: "Piso sobre Piso",
-        description: "Específica para assentar um novo piso sobre outro existente.",
-      },
-      {
-        name: "Porcelanato Interno/Externo",
-        description: "Versões específicas para porcelanato em ambientes internos ou externos.",
-      },
+      { name: "ACI", desc: "Área interna, pisos comuns" },
+      { name: "ACII", desc: "Área externa, cozinha e banheiro" },
+      { name: "ACIII Cinza", desc: "Fachadas e porcelanatos grandes", featured: true },
+      { name: "ACIII Branca", desc: "Mármores e pedras naturais", featured: true },
+      { name: "Piso sobre Piso", desc: "Assentar sobre piso existente" },
+      { name: "Porcelanato", desc: "Versões interno e externo" },
     ],
   },
   {
-    category: "Rejuntes",
-    image: productGrout,
+    title: "Rejuntes e Acabamentos",
     items: [
-      {
-        name: "Rejunte Colorido",
-        description: "Disponível em diversas cores: preto, marrom, grafite, cinza, bege, verde, azul e mais.",
-      },
+      { name: "Rejunte Colorido", desc: "Diversas cores disponíveis" },
+      { name: "Cal Refinado", desc: "Especial para pintura" },
+      { name: "Tinta em Pó", desc: "Alta durabilidade" },
+      { name: "Corante Hidracor", desc: "Múltiplas cores" },
     ],
   },
 ];
 
 const Products = () => {
   return (
-    <section id="products" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="products" className="relative py-24 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+      <div className="absolute top-0 left-0 w-1/3 h-full bg-gradient-to-r from-primary/10 to-transparent" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
-            Categorias
+          <span className="inline-block bg-secondary/10 text-secondary font-semibold text-sm uppercase tracking-wider px-4 py-2 rounded-full mb-6">
+            Nossas Soluções
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Soluções Completas em Argamassas e Rejuntes
+            Soluções Completas em{" "}
+            <span className="text-primary">Argamassas</span> e Rejuntes
           </h2>
           <p className="text-muted-foreground text-lg">
             Cada produto é desenvolvido para atender necessidades específicas, garantindo qualidade e durabilidade em sua obra.
           </p>
         </div>
 
-        {/* Products Grid */}
-        <div className="space-y-16">
-          {products.map((category, idx) => (
-            <div key={category.category} className="grid lg:grid-cols-2 gap-12 items-center">
-              {/* Image */}
-              <div className={`${idx % 2 === 1 ? "lg:order-2" : ""}`}>
-                <div className="relative rounded-2xl overflow-hidden shadow-card">
-                  <img
-                    src={category.image}
-                    alt={category.category}
-                    className="w-full h-80 object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
-                  <div className="absolute bottom-6 left-6">
-                    <h3 className="font-display text-3xl font-bold text-primary-foreground">
-                      {category.category}
-                    </h3>
-                  </div>
-                </div>
-              </div>
+        {/* Main Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Showcase Image */}
+          <div className="order-2 lg:order-1">
+            <img
+              src={productsShowcase}
+              alt="Linha de produtos Argamassa Vitória"
+              className="w-full h-auto rounded-2xl shadow-2xl"
+            />
+          </div>
 
-              {/* Products List */}
-              <div className={`${idx % 2 === 1 ? "lg:order-1" : ""}`}>
-                <div className="grid gap-4">
+          {/* Product Categories */}
+          <div className="order-1 lg:order-2 space-y-8">
+            {productCategories.map((category) => (
+              <div key={category.title} className="bg-card/50 backdrop-blur-sm rounded-2xl p-6 border border-border/50">
+                <h3 className="font-display text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-primary rounded-full" />
+                  {category.title}
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-3">
                   {category.items.map((item) => (
                     <a
                       key={item.name}
                       href={`https://wa.me/5577999120875?text=${encodeURIComponent(`Olá! Gostaria de saber mais sobre ${item.name}.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`p-5 rounded-xl border transition-all duration-300 hover:shadow-card group ${
-                        item.featured
-                          ? "bg-primary/5 border-primary/20 hover:border-primary/40"
-                          : "bg-card border-border hover:border-primary/30"
+                      className={`flex items-start gap-3 p-3 rounded-xl transition-all duration-300 hover:bg-primary/10 group ${
+                        item.featured ? "bg-primary/5 border border-primary/20" : "hover:border-primary/20"
                       }`}
                     >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <div className="flex items-center gap-2 mb-2">
-                            <h4 className="font-display font-semibold text-foreground">
-                              {item.name}
-                            </h4>
-                            {item.featured && (
-                              <span className="text-xs bg-secondary text-secondary-foreground px-2 py-0.5 rounded-full font-medium">
-                                Destaque
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-muted-foreground text-sm">
-                            {item.description}
-                          </p>
+                      <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2">
+                          <span className="font-medium text-foreground text-sm">{item.name}</span>
+                          {item.featured && (
+                            <span className="text-[10px] bg-secondary text-secondary-foreground px-1.5 py-0.5 rounded font-medium">
+                              TOP
+                            </span>
+                          )}
                         </div>
-                        <MessageCircle className="w-5 h-5 text-[hsl(142,70%,49%)] flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                        <span className="text-muted-foreground text-xs">{item.desc}</span>
                       </div>
+                      <MessageCircle className="w-4 h-4 text-[hsl(142,70%,49%)] flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </a>
                   ))}
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
 
-        {/* CTA */}
-        <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">
-            Precisa de ajuda para escolher o produto ideal para sua obra?
-          </p>
-          <Button variant="whatsapp" size="lg" asChild>
-            <a href="https://wa.me/5577999120875" target="_blank" rel="noopener noreferrer">
-              <MessageCircle className="w-5 h-5" />
-              Fale com um Especialista
-            </a>
-          </Button>
+            {/* CTA Button */}
+            <Button variant="whatsapp" size="lg" className="w-full" asChild>
+              <a href="https://wa.me/5577999120875?text=Olá! Gostaria de conhecer todos os produtos." target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5" />
+                Fale com um Especialista
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
