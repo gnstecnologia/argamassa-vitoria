@@ -18,6 +18,7 @@ const buttonVariants = cva(
         hero: "bg-secondary text-secondary-foreground hover:brightness-110 shadow-accent hover:shadow-lg hover:scale-105 transform",
         heroOutline: "border-2 border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 backdrop-blur-sm",
         whatsapp: "bg-[hsl(142,70%,49%)] text-primary-foreground hover:bg-[hsl(142,70%,42%)] shadow-md hover:shadow-lg hover:scale-105 transform",
+        catalog: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-md hover:shadow-lg hover:scale-105 transform",
       },
       size: {
         default: "h-11 px-6 py-2",

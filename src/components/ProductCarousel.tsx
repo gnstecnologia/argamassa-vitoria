@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 import argamassaAci from "@/assets/products/argamassa-aci.jpg";
 import argamassaAcii from "@/assets/products/argamassa-acii.jpg";
@@ -177,7 +177,7 @@ const ProductCarousel = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsAppIcon className="w-4 h-4" />
                   Pedir Orçamento
                 </a>
               </Button>
@@ -195,7 +195,7 @@ const ProductCarousel = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle className="w-5 h-5" />
+              <WhatsAppIcon className="w-5 h-5" />
               Ver Catálogo Completo no WhatsApp
             </a>
           </Button>

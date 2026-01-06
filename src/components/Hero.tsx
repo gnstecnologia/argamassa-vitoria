@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Shield, Clock, Award } from "lucide-react";
+import { Shield, Clock, Award, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const Hero = () => {
   return (
@@ -42,13 +43,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="hero" size="lg" asChild>
               <a href="https://wa.me/5577999120875" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
+                <WhatsAppIcon className="w-5 h-5" />
                 Solicitar Orçamento
               </a>
             </Button>
-            <Button variant="heroOutline" size="lg" asChild>
+            <Button variant="catalog" size="lg" asChild>
               <a href="#product-carousel">
-                <MessageCircle className="w-5 h-5" />
+                <FileText className="w-5 h-5" />
                 Ver Produtos
               </a>
             </Button>
