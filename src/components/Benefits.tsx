@@ -36,10 +36,7 @@ const benefits = [
 const Benefits = () => {
   return (
     <section id="benefits" className="relative py-24 bg-gradient-to-b from-muted via-background to-background overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-1/3 h-1/2 bg-gradient-to-bl from-primary/5 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-1/4 h-1/3 bg-gradient-to-tr from-secondary/5 to-transparent" />
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
