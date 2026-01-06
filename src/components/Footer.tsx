@@ -1,5 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,9 +12,11 @@ const Footer = () => {
           {/* Logo & Slogan */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-display font-bold text-lg">AV</span>
-              </div>
+              <img 
+                src={logo} 
+                alt="Argamassa Vitória" 
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <div>
                 <span className="font-display font-bold text-lg text-primary-foreground">Argamassa </span>
                 <span className="font-display font-bold text-lg text-secondary">Vitória</span>
