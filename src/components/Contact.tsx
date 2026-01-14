@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 const Contact = () => {
@@ -25,14 +25,16 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-6">
               <a 
-                href="tel:7734208084" 
+                href="https://wa.me/557734208084" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 text-primary-foreground hover:text-secondary transition-colors group"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary-foreground/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                  <Phone className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="font-medium">Telefone</p>
+                  <p className="font-medium">WhatsApp</p>
                   <p className="text-primary-foreground/70">(77) 3420-8084</p>
                 </div>
               </a>

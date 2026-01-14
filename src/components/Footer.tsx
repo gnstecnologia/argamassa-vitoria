@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.jpg";
 
@@ -53,8 +53,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold text-primary-foreground mb-4">Contato</h4>
             <div className="space-y-3">
-              <a href="tel:7734208084" className="flex items-center gap-2 text-primary-foreground/60 hover:text-secondary transition-colors text-sm">
-                <Phone className="w-4 h-4" />
+              <a href="https://wa.me/557734208084" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/60 hover:text-secondary transition-colors text-sm">
+                <WhatsAppIcon className="w-4 h-4" />
                 (77) 3420-8084
               </a>
               <a href="https://wa.me/5577999120875" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-foreground/60 hover:text-secondary transition-colors text-sm">

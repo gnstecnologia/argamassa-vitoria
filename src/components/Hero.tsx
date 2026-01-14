@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Clock, Award, FileText } from "lucide-react";
+import { Shield, Clock, Award, Send } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 const Hero = () => {
@@ -49,7 +49,7 @@ const Hero = () => {
             </Button>
             <Button variant="catalog" size="lg" asChild>
               <a href="#product-carousel">
-                <FileText className="w-5 h-5" />
+                <Send className="w-5 h-5" />
                 Ver Produtos
               </a>
             </Button>

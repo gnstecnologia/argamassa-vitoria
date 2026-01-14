@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import logo from "@/assets/logo.jpg";
 
 const Header = () => {
@@ -46,8 +47,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:7734208084" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-              <Phone className="w-4 h-4" />
+            <a href="https://wa.me/557734208084" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+              <WhatsAppIcon className="w-4 h-4" />
               <span className="font-medium">(77) 3420-8084</span>
             </a>
             <Button variant="hero" asChild>

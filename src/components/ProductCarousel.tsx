@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { FileText } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
 import argamassaAci from "@/assets/products/argamassa-aci.jpg";
@@ -10,10 +9,7 @@ import argamassaAciiiBranca from "@/assets/products/argamassa-aciii-branca.png";
 import porcelanatoInterno from "@/assets/products/porcelanato-interno.jpg";
 import porcelanatoExterno from "@/assets/products/porcelanato-externo.jpg";
 import pisoSobrePiso from "@/assets/products/piso-sobre-piso.jpg";
-import calRefinado from "@/assets/products/cal-refinado.jpg";
 import rejuntamento from "@/assets/products/rejuntamento.jpg";
-import tintaEmPo from "@/assets/products/tinta-em-po.jpg";
-import coranteHidracor from "@/assets/products/corante-hidracor.jpg";
 
 const products = [
   {
@@ -59,28 +55,10 @@ const products = [
     whatsappMessage: "Olá! Gostaria de saber mais sobre a Argamassa Piso sobre Piso.",
   },
   {
-    image: calRefinado,
-    name: "Cal Refinado",
-    description: "Cal super refinado especial para pintura. Embalagem de 5kg.",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Cal Refinado.",
-  },
-  {
     image: rejuntamento,
     name: "Rejunte Colorido",
     description: "Disponível em diversas cores: preto, grafite, cinza, bege, azul, branco e mais.",
     whatsappMessage: "Olá! Gostaria de saber mais sobre o Rejunte Colorido.",
-  },
-  {
-    image: tintaEmPo,
-    name: "Tinta em Pó",
-    description: "Tinta em pó para exteriores e interiores. Lavável e de alta durabilidade.",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre a Tinta em Pó.",
-  },
-  {
-    image: coranteHidracor,
-    name: "Corante Hidracor",
-    description: "Corante líquido em diversas cores: amarelo, ocre, verde, azul, vermelho, violeta, preto e laranja.",
-    whatsappMessage: "Olá! Gostaria de saber mais sobre o Corante Hidracor.",
   },
 ];
 
@@ -93,7 +71,7 @@ const ProductCarousel = () => {
 
     let animationId: number;
     let scrollPosition = 0;
-    const speed = 0.5;
+    const speed = 0.6;
 
     const animate = () => {
       scrollPosition += speed;
@@ -196,7 +174,7 @@ const ProductCarousel = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FileText className="w-5 h-5" />
+              <WhatsAppIcon className="w-5 h-5" />
               Ver Catálogo Completo
             </a>
           </Button>

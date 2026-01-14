@@ -8,9 +8,9 @@ const productCategories = [
     title: "Argamassas",
     items: [
       { name: "ACI", desc: "Área interna, pisos comuns" },
-      { name: "ACII", desc: "Área externa, cozinha e banheiro" },
+      { name: "ACII", desc: "Área externa, cozinha e banheiro", featured: true },
       { name: "ACIII Cinza", desc: "Fachadas e porcelanatos grandes", featured: true },
-      { name: "ACIII Branca", desc: "Mármores e pedras naturais", featured: true },
+      { name: "ACIII Branca", desc: "Mármores e pedras naturais" },
       { name: "Piso sobre Piso", desc: "Assentar sobre piso existente" },
       { name: "Porcelanato", desc: "Versões interno e externo" },
     ],
@@ -19,9 +19,9 @@ const productCategories = [
     title: "Rejuntes e Acabamentos",
     items: [
       { name: "Rejunte Colorido", desc: "Diversas cores disponíveis" },
-      { name: "Cal Refinado", desc: "Especial para pintura" },
-      { name: "Tinta em Pó", desc: "Alta durabilidade" },
-      { name: "Corante Hidracor", desc: "Múltiplas cores" },
+      { name: "Rejunte Flexível", desc: "Para áreas sujeitas a movimentação" },
+      { name: "Impermeabilizante", desc: "Proteção contra umidade e infiltrações" },
+      { name: "Selador para Rejunte", desc: "Proteção e facilita limpeza" },
     ],
   },
 ];
@@ -83,13 +83,13 @@ const Products = () => {
                           <span className="font-medium text-foreground text-sm">{item.name}</span>
                           {item.featured && (
                             <span className="text-[10px] bg-secondary text-secondary-foreground px-1.5 py-0.5 rounded font-medium">
-                              TOP
+                              Mais Popular
                             </span>
                           )}
                         </div>
                         <span className="text-muted-foreground text-xs">{item.desc}</span>
                       </div>
-                      <WhatsAppIcon className="w-4 h-4 text-[hsl(142,70%,49%)] flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <WhatsAppIcon className="w-4 h-4 text-[hsl(142,70%,49%)] flex-shrink-0" />
                     </a>
                   ))}
                 </div>
