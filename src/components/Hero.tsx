@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Clock, Award, Send } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import fotoProdutos from "@/assets/products/FOTO PRUDUTOS 01.png";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex items-center pt-20">
+  return <section id="home" className="relative min-h-screen flex items-center pt-20 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img src={heroBg} alt="Fábrica de argamassa" className="w-full h-full object-cover" />
@@ -11,8 +12,9 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
+      <div className="container mx-auto px-4 relative z-10 pt-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+          <div className="max-w-3xl">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm border border-secondary/30 rounded-full px-4 py-2 mb-6 animate-fade-up">
             <Award className="w-4 h-4 text-secondary" />
@@ -26,7 +28,7 @@ const Hero = () => {
           animationDelay: "0.1s"
         }} className="font-display text-4xl md:text-5xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-up lg:text-5xl">
             Argamassa de Qualidade para
-            <span className="block text-secondary mt-2">Construir Seus Sonhos</span>
+            <span className="block text-white mt-2">Construir Seus Sonhos</span>
           </h1>
 
           {/* Subheading */}
@@ -86,6 +88,15 @@ const Hero = () => {
                 <p className="text-primary-foreground/60 text-sm">De Experiência</p>
               </div>
             </div>
+          </div>
+          </div>
+          {/* Imagem dos produtos */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={fotoProdutos}
+              alt="Argamassa Vitória - Interno ACI, Rejuntamento Flexível e ACIII Branca"
+              className="max-h-[420px] w-auto object-contain drop-shadow-2xl rounded-2xl"
+            />
           </div>
         </div>
       </div>

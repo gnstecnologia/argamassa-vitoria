@@ -2,14 +2,14 @@ import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 
-import argamassaAci from "@/assets/products/argamassa-aci.jpg";
-import argamassaAcii from "@/assets/products/argamassa-acii.jpg";
-import argamassaAciii from "@/assets/products/argamassa-aciii.jpg";
-import argamassaAciiiBranca from "@/assets/products/argamassa-aciii-branca.png";
-import porcelanatoInterno from "@/assets/products/porcelanato-interno.jpg";
-import porcelanatoExterno from "@/assets/products/porcelanato-externo.jpg";
-import pisoSobrePiso from "@/assets/products/piso-sobre-piso.jpg";
-import rejuntamento from "@/assets/products/rejuntamento.jpg";
+import argamassaAci from "@/assets/products/Files/ac1.png";
+import argamassaAcii from "@/assets/products/Files/argamassa ac2.png";
+import argamassaAciii from "@/assets/products/Files/argamssa ac3 fachadas.png";
+import argamassaAciiiBranca from "@/assets/products/Files/argamassa ac3 branca.png";
+import porcelanatoInterno from "@/assets/products/Files/argamassa_porcelanato.png";
+import porcelanatoExterno from "@/assets/products/Files/porcelanto externo.png";
+import pisoSobrePiso from "@/assets/products/Files/piso_sobre_piso.png";
+import rejuntamento from "@/assets/products/Files/rejnte_flexivel.png";
 
 const products = [
   {
